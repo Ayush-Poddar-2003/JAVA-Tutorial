@@ -3,17 +3,18 @@
 Why ?  
 Readibility, Reusability, DRY
 
-OOPs : Object oriented programming {S:System/Structure-Real life like inheritence, inddpendant of language}
+OOPs : Object oriented programming  
+{S: System/Structure-Real life like inheritence, inddpendant of language}
 
 
 ---
 ### CLASS ?
-Blueprint for object, Name always capital
+Blueprint/Template for object, Name always capital
 
 ```
 class Myclass
 {
-    ~ data members/Attributes/Properties/State  
+    ~ data members/Attributes/Properties/Fields  
     ~ member functions//Methods/Behaviour
 
     psvm{
@@ -23,7 +24,8 @@ class Myclass
 ```
 ---
 ### OBJECT ?
-Real life entity  
+Real life entity, An instance of a class.  
+When objects are created they inherit all the variables and methods from the class.  
 
 `className objectName = new className()`.   
 new => Allocates memory to object  
