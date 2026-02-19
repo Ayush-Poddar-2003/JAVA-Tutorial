@@ -21,24 +21,30 @@ High-level, Object-Oriented, Platform independent, Compiled and interpreted Lang
 Other languages:  
 You write code → compile → machine code → runs only on that OS.
 
-Process :-
+In Java :-
 
-1. Java Compiler(Javac) converts **.java** into **.class**(Bytecode).  
+1. We write .java file => Java Compiler(Javac) converts **.java** into **.class**(Bytecode) ie. compilation in compile time.   
 Bytecode: Not human readable, Not machine code, A middle language.  
-2. **JVM** (Java Virtual Machine) does further 3 things
-    1. Loads your .class file into memory.
-    2. Checks bytecode, No illegal memory access, No security issues
-    3. Executes the code
+2. **JVM** (Java Virtual Machine) executes that byte code ie. interpretation in runtime.
 
-Java is both. It is compiled into bytecode and then interpreted (and JIT-compiled) by the JVM at runtime.
 
----
-## JVM vs JDK vs JRE
-
-**JVM ?**  
-A virtual computer inside your real computer that  
+## JVM ?
+A virtual computer inside your real computer that =>  
 Executes bytecode, Manages memory, Does garbage collection, Ensures security
 
+Components :-
+1. **Class Loader**: Scans class path(where classes are defined)
+   1. Loading
+   2. Initialization
+   3. Linking
+2. **Byte Code Verifier**
+3. **JVM Langauge Stack**: Manages thread
+4. **Method Area**
+5. **Registers**
+6. **JIT Compiler**: Finds frequent run code and outputs
+
+
+Overall we need to install JDK in our pc to run java.
 ![alt text](image.png)
 
 
@@ -57,6 +63,7 @@ Every line of code that runs in Java must be inside a class.
 The class name should always start with an uppercase first letter.  
 The name of the Java file must match the class name.
 
+>We have made class 'Ayush' still we are able to run without object bcoz of static keyword
 <br>
 
 ---

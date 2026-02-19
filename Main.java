@@ -1,22 +1,21 @@
-class Employee{
-    int age = 20;
-    static int rollNo = 69;
+import java.util.ArrayList;
 
-    int basicSal = 20000;
-    int incentive = 300;
-    void countSal(){
-        System.out.println(basicSal+incentive);
-    }
-}
+public class Main {
+  public static void main(String[] args) 
+  {
+    ArrayList<String> cars = new ArrayList<String>();
 
-class Test{
-    public static void main(String[] args) {
-        Employee emp1 = new Employee();
-        System.out.println(emp1.age);
-        //here we used object
+    cars.add("Volvo");
+    cars.add(0, "Mazda"); // Insert element at index
 
-        //If want to directly use class
-        // System.out.println(Employee.age); //Will give error
-        System.out.println(Employee.rollNo); //Work coz of static
-    }
+    System.out.print(cars.get(0));  // Get the first element
+
+    cars.set(0, "Opel");
+
+    cars.remove(0);
+
+    cars.clear(); //To remove all the elements
+
+    System.out.println(cars);
+  }
 }

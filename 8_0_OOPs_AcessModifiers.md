@@ -27,7 +27,8 @@ class Myclass
 Real life entity, An instance of a class.  
 When objects are created they inherit all the variables and methods from the class.  
 
-`className objectName = new className()`   
-new => Allocates memory to object  
-className() => constructor
+`className obj = new className()`   
+
+obj will get memory, either as heap or stack
+
 
